@@ -4,11 +4,12 @@
 }
 
 .header{
+    position: fixed;
     position: relative;
 }
 .img-bg{
     width: 100%;
-    height: 130px;
+    height: 140px;
     opacity: 50%;
 }
 
@@ -16,8 +17,8 @@
     position: absolute;
     width: 150px;
     height: 150px;
-    left: 75px;
-    top: -10px;
+    left: 100px;
+    top: -1px;
 
 }
 
@@ -35,16 +36,65 @@
   text-decoration: none;
   transition: all 250ms;
   border: 0;
-  font-size: 16px;
+  font-size: 36.6px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   position: absolute;
-  bottom: 50px;
-  right: 200px;
+  bottom: 40px;
+  right: 250px;
 }
 
-.login-signup {
+.login-signup:hover{
   box-shadow: pink;
   transform: scale(1.05) rotate(-1deg);
+}
+
+h1{
+display: none;
+position: absolute;
+width: 469px;
+height: 80px;
+left: 440px;
+top: 21px;
+
+font-family: 'Irish Grover';
+font-style: italic;
+font-weight:bold;
+font-size: 59.3px;
+line-height: 59px;
+/* or 100% */
+
+color: #F863F2;
+
+-webkit-text-stroke: 3px black;
+}
+h3{
+    display: none;
+    position: absolute;
+    width: 469px;
+    height: 80px;
+    left: 490px;
+    top: 70px;
+    
+    font-family: 'Irish Grover';
+    font-style: italic;
+    font-weight:bold;
+    font-size: 36.6px;
+    line-height: 59px;
+    /* or 100% */
+    
+    color: #F863F2;
+    
+    -webkit-text-stroke: 3px black;
+    }
+
+@media only screen and (min-width: 1000px) {
+    h1, h3{
+        display:initial;
+    }
+    #logo{
+        left: 50px;
+    }
 }
